@@ -31,9 +31,9 @@ export default class XraySDK {
                 response = await response;
             }
 
-            this.sendStep(props, response);
+            await this.sendStep(props, response);
         } catch (error) {
-            this.sendStep(
+            await this.sendStep(
                 props,
                 {
                     error: {
