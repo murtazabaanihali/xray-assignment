@@ -6,10 +6,8 @@ This repo contains a **minimal X-Ray system** for debugging multi-step pipelines
 
 ## Prerequisites
 
-- **Node.js 18+** or **Bun**
+- **Bun**
 - **Git**
-
-> Recommended: **Bun** (faster + SQLite support out of the box)
 
 ---
 
@@ -27,14 +25,12 @@ This repo contains a **minimal X-Ray system** for debugging multi-step pipelines
 ```bash
 cd api
 bun install
-# or: npm install
 ````
 
 ### Run the server
 
 ```bash
 bun run index.ts
-# or: node index.js / ts-node
 ```
 
 Server will start on:
@@ -59,7 +55,6 @@ The SQLite database (`steps.db`) is created automatically.
 ```bash
 cd sdk
 bun install
-# or: npm install
 ```
 
 ### Example usage
